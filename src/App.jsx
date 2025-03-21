@@ -1,8 +1,9 @@
-import React from 'react';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import PortfolioSection from './components/PortfolioSection';
+import React from "react";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import PortfolioSection from "./components/PortfolioSection";
+import ContactSection from "./components/ContactSection";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <HeroSection />
       <AboutSection />
       <PortfolioSection />
+      <ContactSection />
     </div>
   );
 };
