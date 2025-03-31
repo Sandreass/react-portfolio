@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import PortfolioSection from "./components/PortfolioSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <AboutSection />
       <PortfolioSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 };
