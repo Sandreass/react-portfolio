@@ -76,6 +76,34 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          <div>
+            <h3 className="text-xl font-bold mb-4">Contact Info</h3>
+            <ul className="space-y-4">
+              <li className="flex items-center">
+                <Mail size={20} className="mr-2" />
+                <a
+                  href="mailto:andreas@example.com"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  sandreasweb@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Phone size={20} className="mr-2" />
+                <a
+                  href="tel:+1234567890"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  +123 456 7890
+                </a>
+              </li>
+              <li className="flex items-start">
+                <MapPin size={20} className="mr-2 mt-1" />
+                <span className="text-gray-400">Metzingen, Germany</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500">
