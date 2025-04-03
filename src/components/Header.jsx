@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Navigation from "./Navigation";
+import Logo from "./Logo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,12 @@ const Header = () => {
   return (
     <header className="container mx-auto px-4 py-6">
       <div className="flex justify-between items-center">
+        <div className="flex-shrink-0">
+          <a href="#home">
+            <Logo />
+          </a>
+        </div>
+
         <div className="hidden md:flex justify-center flex-1">
           <Navigation />
         </div>
