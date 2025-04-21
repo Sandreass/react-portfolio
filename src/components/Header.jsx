@@ -1,25 +1,24 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import Logo from "./Logo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <header className="container mx-auto px-4 py-6">
       <div className="flex justify-between items-center">
         <div className="flex-shrink-0">
-          <a href="#home">
+          <Link to="#home">
+            {" "}
             <Logo />
-          </a>
+          </Link>
         </div>
 
-        <div className="hidden md:flex justify-center flex-1">
+        <div className="hidden md sm lg:flex justify-center flex-1">
           <Navigation />
         </div>
 
@@ -30,12 +29,12 @@ const Header = () => {
         </div>
 
         <div>
-          <a
-            href="/services"
+          <Link
+            to="/services"
             className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-gray-200 transition-colors"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
 
